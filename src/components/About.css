@@ -1,0 +1,352 @@
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f1eb 0%, #e8ddd4 50%, #d4c4b0 100%);
+  padding: 2rem 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(255, 251, 245, 0.95);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: #8b7355;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.back-button:hover {
+  background: rgba(166, 124, 82, 0.1);
+  border-color: #a67c52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(166, 124, 82, 0.2);
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8b7355;
+  margin: 2rem 0 1rem 0;
+  background: linear-gradient(135deg, #a67c52 0%, #8b7355 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  color: #a67c52;
+  margin: 0;
+  font-weight: 400;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section {
+  background: rgba(255, 251, 245, 0.95);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(139, 115, 85, 0.15);
+  border: 1px solid rgba(212, 196, 176, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #8b7355;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 2px solid #f0ebe4;
+  padding-bottom: 0.5rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #5a4a3a;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.feature-card {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  border-color: #a67c52;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(166, 124, 82, 0.2);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #a67c52;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8b7355;
+  margin: 0 0 0.75rem 0;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #5a4a3a;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.tech-item {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.tech-item h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8b7355;
+  margin: 0 0 1rem 0;
+}
+
+.tech-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-item li {
+  padding: 0.5rem 0;
+  color: #5a4a3a;
+  border-bottom: 1px solid #f0ebe4;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.tech-item li:before {
+  content: '◉';
+  position: absolute;
+  left: 0;
+  color: #a67c52;
+  font-weight: bold;
+}
+
+.tech-item li:last-child {
+  border-bottom: none;
+}
+
+.design-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.principle {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.principle h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8b7355;
+  margin: 0 0 0.75rem 0;
+}
+
+.principle p {
+  font-size: 1rem;
+  color: #5a4a3a;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a67c52;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #8b7355;
+  font-weight: 500;
+}
+
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.roadmap-item {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.roadmap-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8b7355;
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #f0ebe4;
+  padding-bottom: 0.5rem;
+}
+
+.roadmap-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roadmap-item li {
+  padding: 0.5rem 0;
+  color: #5a4a3a;
+  border-bottom: 1px solid #f0ebe4;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.roadmap-item li:before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: #a67c52;
+  font-weight: bold;
+}
+
+.roadmap-item li:last-child {
+  border-bottom: none;
+}
+
+.github-info {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-info {
+  background: rgba(248, 246, 242, 0.8);
+  border: 2px solid #e8ddd4;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-weight: 500;
+  color: #8b7355;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem 0;
+  }
+  
+  .back-button {
+    position: static;
+    margin-bottom: 1rem;
+    display: block;
+    width: fit-content;
+  }
+  
+  .about-header h1 {
+    font-size: 2rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .about-section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .features-grid,
+  .tech-stack,
+  .design-principles,
+  .stats-grid,
+  .roadmap {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .feature-card,
+  .tech-item,
+  .principle,
+  .stat-card,
+  .roadmap-item {
+    padding: 1rem;
+  }
+}
